@@ -220,7 +220,7 @@ spec:dom; type:interface; text:Document
 
 	<h3 id='visibility-observer-callback'>The VisibilityObserverCallback</h3>
 		<pre class='idl'>
-			callback VisibilityObserverCallback = void(sequence&lt;VisibilityObserverEntry&gt; entries, VisibilityObserver observer)
+			callback VisibilityObserverCallback = void(sequence&lt;VisibilityObserverEntry&gt; entries, VisibilityObserver observer);
 		</pre>
 		This callback will be invoked when there are changes to the document's <em>visibility state</em>.
 
@@ -301,9 +301,9 @@ spec:dom; type:interface; text:Document
 		<pre class="idl">
  	     dictionary VisibilityObserverInit {
  	       (double or sequence&lt;double&gt;) areaThreshold = 0;
-				 (boolean) displacementAware = false;
-				 (DOMString) visibleMargin = "0px";
-				 (Element)? observedElement;
+				 boolean displacementAware = false;
+				 DOMString visibleMargin = "0px";
+				 Element? observedElement;
  	     };
 		</pre>
 
